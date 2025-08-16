@@ -47,36 +47,6 @@ body {
 }
 
 /* Navigation */
-.nav-modern {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid #e5e7eb;
-    z-index: 1000;
-    transition: all 0.3s ease;
-}
-
-.nav-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 4rem;
-}
-
-.nav-brand {
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: #1f2937;
-}
-
-.nav-links {
-    display: flex;
-    gap: 0.25rem;
-}
-
 .nav-link {
     padding: 0.5rem 1rem;
     text-decoration: none;
@@ -84,7 +54,7 @@ body {
     font-weight: 500;
     border-radius: 0.5rem;
     transition: all 0.3s ease;
-}
+} 
 
 .nav-link:hover,
 .nav-link.active {
@@ -92,13 +62,26 @@ body {
     background-color: #eff6ff;
 } 
 
+
 /* Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Adjust this based on your navbar height */
+body {
+    padding-top: 60px; /* Prevent navbar from covering top content */
+}
+
 .nav-modern {
     background-color: #fff;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .container-modern {
@@ -131,7 +114,7 @@ body {
 
 .mobile-menu-btn {
     display: none;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     background: none;
     border: none;
     cursor: pointer;
@@ -158,19 +141,21 @@ body {
     .mobile-menu-btn {
         display: block;
     }
+
+    .nav-link {
+        padding: 0.75rem 0;
+        font-size: 1.1rem;
+    }
+
+    .nav-content {
+        height: 50px; /* reduce height on mobile */
+    }
+
+    body {
+        padding-top: 50px; /* match navbar height on mobile */
+    }
 }
 
-
-
-
-.mobile-menu-btn {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    color: #1f2937;
-    cursor: pointer;
-}
 
 /* Buttons */
 .btn-primary {
