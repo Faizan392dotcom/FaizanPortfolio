@@ -25,6 +25,21 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const newLINKS = document.getElementById('navLinks');
+
+    mobileBtn.addEventListener('click', () => {
+        newLINKS.classList.toggle('active');
+    });
+
+
+
+
+
+
+
+
     // Active section tracking
     const sections = document.querySelectorAll('section[id]');
     
