@@ -999,3 +999,34 @@ body {
     box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
 }
 
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    margin: 0.5rem;
+    border-radius: 50%;
+    background-color: #2f3542; /* dark background */
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.social-link i {
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+/* Brand-specific colors */
+.social-link.whatsapp i {
+    color: #25D366; /* WhatsApp green */
+}
+
+.social-link.linkedin i {
+    color: #0077b5; /* LinkedIn blue */
+}
+
+/* Optional: Hover effect */
+.social-link:hover {
+    transform: scale(1.1);
+}
