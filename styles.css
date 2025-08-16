@@ -1030,3 +1030,10 @@ body {
 .social-link:hover {
     transform: scale(1.1);
 }
+
+.profile-img {
+  width: 50px;  /* Adjust the size */
+  height: 50px;  /* Adjust the size */
+  border-radius: 70%;
+  object-fit: cover;
+}
